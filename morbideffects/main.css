@@ -805,7 +805,7 @@
       right:0em;
       aspect-ratio: 1;
       width: 50%;
-      filter: invert(16%) sepia(10%) saturate(6479%) hue-rotate(219deg) brightness(96%) contrast(91%);
+      filter: brightness(0) saturate(100%) invert(15%) sepia(60%) saturate(1182%) hue-rotate(218deg) brightness(94%) contrast(91%);
     }
     .triangle {
       position: relative;
@@ -814,7 +814,7 @@
       right:0em;
       aspect-ratio: 1;
       width: 50%;
-      filter: invert(16%) sepia(10%) saturate(6479%) hue-rotate(219deg) brightness(96%) contrast(91%);
+      filter: brightness(0) saturate(100%) invert(15%) sepia(60%) saturate(1182%) hue-rotate(218deg) brightness(94%) contrast(91%);
     }
     .circle {
       position: relative;
@@ -823,7 +823,7 @@
       right:0em;
       aspect-ratio: 1;
       width: 35%;
-      filter: invert(16%) sepia(10%) saturate(6479%) hue-rotate(219deg) brightness(96%) contrast(91%);
+      filter: brightness(0) saturate(100%) invert(15%) sepia(60%) saturate(1182%) hue-rotate(218deg) brightness(94%) contrast(91%);
     }
   }
   
