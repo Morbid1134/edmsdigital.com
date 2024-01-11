@@ -32,7 +32,7 @@ body {
 .header-text {
     margin-top: 10%;
     font-size: 20px;
-    margin-right: 60%;
+    padding-right: 50px;
 }
 .header-text h1 {
     font-size: 60px;
@@ -41,7 +41,7 @@ body {
 }
 .btn { 
     display: block;
-    margin: 50px auto;
+    margin: 50px 0 auto;
     width: fit-content;
     border: 1px solid var(--accent-color);
     padding: 14px 50px;
