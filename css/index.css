@@ -85,7 +85,7 @@ nav ul li a:hover::after {
 /* ---------------------about---------------- */
 
 #about {
-    padding: 80px 0;
+    padding: 80px 0 0 0;
     color: #ababab;
 }
 .row {
@@ -146,7 +146,89 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block;
 }
+/* -----------------certifications----------------- */
 
+.certifications {
+    padding: 30px 0;
+}
+
+.certifications-list {
+    max-height: 100%;
+    transition: max-height 0.5s ease-out, opacity 1s;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
+
+.certifications-list.visible {
+    max-height: 100%;
+}
+
+.certifications-list div {
+    background: transparent;
+    padding: 14px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.certifications-list div a, .certifications-list div p {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.certifications-list div p {
+    margin-top: 5px;
+}
+
+.certifications-list img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    filter: grayscale(50%);
+}
+
+.certifications-list div:hover {
+    background: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.certifications-list div:hover a, .certifications-list div:hover p{
+    opacity: 1;
+}
+
+#cert-icon-up, #cert-icon-down {
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+    margin-left: 10px;
+    color: var(--accent-color);
+}
+#cert-icon-up {
+    opacity: 0;
+    transform: translateY(20%);
+}
+
+#cert-icon-down {
+    transform: translateY(-20%);
+}
+#cert-title {
+    display: none;
+}
 /* ---------------services-------------------- */
 
 #services {
@@ -394,6 +476,18 @@ nav .fas {
     }
     .copyright {
         font-size: 14px;
+    }
+    
+    .certifications-list {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+    #cert-title {
+        display: block;
+    }
+    .certifications-list div a{
+        opacity: 1;
     }
 }
 
