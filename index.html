@@ -68,6 +68,41 @@
             </div>
         </div>
     </div>
+    <!-- -------------------certifications------------- -->
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title" id="cert-title" onclick="toggleCertifications()">Certifications<i class="fa-solid fa-arrows-up-to-line" id="cert-icon-up"></i>
+                    <i class="fa-solid fa-arrows-down-to-line" id="cert-icon-down"></i>
+            </h1>
+            <div class="certifications-list" id="certifications-list">
+                <div>
+                    <img src="img/a-plus.png" alt="">
+                    <a href="#certifications" target="_blank">CompTIA A+</a>
+                    <p>(In Progress)</p>
+                </div>
+                <div>
+                    <img src="img/google-it-support.png" alt="">
+                    <a href="https://coursera.org/share/2b07f2973fde6e06c5db5a4c60845477" target="_blank">IT Support Specialization</a>
+                </div>
+                <div>
+                    <img src="img/word.png" alt="">
+                    <a href="https://verify.certiport.com" target="_blank">Word Associate</a>
+                    <p>m49S-XVHT</p>
+                </div>
+                <div>
+                    <img src="img/powerpoint.png" alt="">
+                    <a href="https://verify.certiport.com" target="_blank">PowerPoint Associate</a>
+                    <p>yzTL-uTL4</p>
+                </div>
+                <div>
+                    <img src="img/photoshop.png" alt="">
+                    <a href="https://verify.certiport.com" target="_blank">Adobe Certified Professional</a>
+                    <p>PekP-uShh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- -------------------services------------------- -->
     <div id="services">
         <div class="container">
@@ -207,5 +242,34 @@
             })
         })
       </script>
+<script>
+
+    function toggleCertifications() {
+        var certificationsList = document.getElementById("certifications-list");
+        var cert_icon_up = document.getElementById('cert-icon-up')
+        var cert_icon_down = document.getElementById('cert-icon-down')
+        var contentHeight = certificationsList.scrollHeight + 'px';
+
+        if (certificationsList.style.maxHeight === '0px' || certificationsList.style.maxHeight === '') {
+            certificationsList.style.maxHeight = contentHeight;
+            certificationsList.style.overflow = 'visible';
+            certificationsList.style.opacity = "1";
+            cert_icon_down.style.transform = "translateY(50%)";
+            cert_icon_up.style.transform = "translateY(50%)";
+            cert_icon_down.style.opacity = "0";
+            cert_icon_up.style.opacity = "1";
+        } else {
+            certificationsList.style.maxHeight = '0';
+            certificationsList.style.overflow = 'hidden';
+            certificationsList.style.opacity = "0";
+            cert_icon_down.style.transform = "translateY(-20%)";
+            cert_icon_up.style.transform = "translateY(-20%)";
+            cert_icon_down.style.opacity = "1";
+            cert_icon_up.style.opacity = "0";
+        }
+    }
+</script>
+
+   
 </body>
 </html>
