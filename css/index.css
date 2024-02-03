@@ -202,6 +202,13 @@ nav ul li a:hover::after {
     transition: transform 0.5s;
     filter: grayscale(50%);
 }
+.certifications-list .aplus img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    filter: none;
+}
 
 .certifications-list div:hover {
     background: var(--accent-color);
@@ -210,6 +217,9 @@ nav ul li a:hover::after {
 
 .certifications-list div:hover a, .certifications-list div:hover p{
     opacity: 1;
+}
+.certifications-list .aplus:hover>img {
+    content: url(../img/Aplus\ Certified\ CE/Aplus\ Logo\ Certified\ CE\ White.png);
 }
 
 #cert-icon-up, #cert-icon-down {
