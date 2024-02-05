@@ -506,3 +506,7 @@ nav .fas {
     margin-top: -40px;
     display: block;
 }
+
+#services .sub-title, #portfolio .sub-title {
+    color: #ababab;
+}
